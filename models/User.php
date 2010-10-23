@@ -25,7 +25,6 @@ class User {
 
     //used when adding new user info to database.
     /**
-     *
      * @param string $name
      * @param string $pword
      */
