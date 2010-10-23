@@ -22,6 +22,7 @@ class User {
      * @param <type> $id
      * @param <type> $name
      * @param <type> $pword
+     * @abstract blas
      */
     function _construct($id, $name, $pword) {
         $this->userID = $id;
