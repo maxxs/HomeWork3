@@ -15,7 +15,14 @@ class User {
     var $username;
     var $password;
 
+
     //used when reading user info from database.
+    /**
+     *
+     * @param <type> $id
+     * @param <type> $name
+     * @param <type> $pword
+     */
     function _construct($id, $name, $pword) {
         $this->userID = $id;
         $this->username = $name;
@@ -23,6 +30,7 @@ class User {
     }
 
     //used when adding new user info to database.
+    
     function _construct($name, $pword) {
         $this->username = $name;
         $this->password = $pword;
