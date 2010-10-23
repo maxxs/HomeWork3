@@ -1,14 +1,5 @@
 <?php
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- * Description of URL
- *
- * @author smtraber
- */
 class URL {
     //put your code here
 
