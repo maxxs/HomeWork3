@@ -22,5 +22,23 @@ class User {
         $this->password = $pword;
     }
 
+    //used when adding new user info to database.
+    function _construct($name, $pword) {
+        $this->username = $name;
+        $this->password = $pword;
+    }
+
+    public function getUserID() {
+        return $this->userID;
+    }
+
+    public function getUsername() {
+        return $this->username;
+    }
+
+    public function getPassword() {
+        return $this->password;
+    }
+
 }
 ?>
