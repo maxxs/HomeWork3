@@ -8,5 +8,7 @@ Abstract Class someController{
     }
 
     abstract function index();
+
+    abstract function index2lala();
 }
 ?>
