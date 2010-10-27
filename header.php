@@ -17,6 +17,7 @@ if ($_REQUEST['c'] == null && $_REQUEST['v'] == null && $_REQUEST['p'] == null) 
         <link href="css/placesToGo.css" rel="stylesheet" type="text/css">
         <link href="css/header.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/signup.js"></script>
+        <script type="text/javascript" src="js/urlShort.js"></script>
     </head>
     <body>
         <div class="header">
