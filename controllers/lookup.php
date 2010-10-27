@@ -1,3 +1,4 @@
 <?php
-echo "Lookup controller. A.K.A urlshortner controller"
+echo $_POST['url'];
+echo $_POST['vanityName'];
 ?>

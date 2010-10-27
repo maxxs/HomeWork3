@@ -23,7 +23,7 @@
                         Name you want to give to URL.
                     </td>
                     <td>
-                        <input type="text" name="url" value="" size="20" />
+                        <input type="text" name="vanityName" value="" size="20" />
                     </td>
                 <tr></tr>
                 <tr>
