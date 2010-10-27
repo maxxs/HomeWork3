@@ -1,5 +1,8 @@
 <div class="centered" id="registerForm">
     <form name="signup" method="POST" action="controllers/signup.php">
+        <h3>
+            Signup form. All fields are mandatory. Please no leading spaces !
+        </h3>
         <table>
             <tr>
                 <td>
@@ -44,7 +47,7 @@
             <tr></tr>
             <tr>
                 <td align ="center" colspan ="2">
-                    <input type="submit" value="Submit" onclick="Validate()"/>
+                    <input type="submit" value="Submit" onclick="return Validate()"/>
                 </td>
             </tr>
         </table>
