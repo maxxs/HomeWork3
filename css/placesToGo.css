@@ -1,0 +1,29 @@
+#div-body {
+    width:100%;
+}
+#div-header {
+    width:100%;
+}
+#div-footer {
+    width:100%;
+}
+.column1 {
+    width:20%;
+    height:100%;
+    
+    float: left;
+    background-color: #ffffff;
+}
+.column2 {
+    width:80%;
+    float: left;
+    height: 100%;
+}
+
+.column3 {
+    width:80%;
+    float: left;
+    height: 100%;
+
+    background-image: url(../images/R8.JPG);
+}

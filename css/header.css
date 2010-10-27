@@ -1,0 +1,37 @@
+root { 
+    display: block;
+}
+
+.headerTable {
+
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-top-style: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    border-right-color: #66ffff;
+    border-left-color: #66ffff;
+    border-bottom-color: #66ffff;
+    border-top-color: #66ffff;
+    background-color: #ccccff;
+}
+
+.title {
+    font-size: 36pt;
+    font-weight: bold;
+    left: 3cm;
+    position: relative;
+}
+div.centered
+{
+    text-align: center;
+}
+div.centered table
+{
+    margin: 0 auto;
+    text-align: left;
+}
