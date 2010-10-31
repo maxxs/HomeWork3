@@ -1,7 +1,7 @@
 <?php
 session_start();
-//echo $_POST['username'];
-//echo $_POST['password'];
+$configVars = parse_ini_file('../config/config.ini', TRUE);
+$baseurl = $configVars['Database']['baseurl'];
 include '../models/User.php';
 $user = new User($_POST["username"], $_POST["password"]);
 $user->setFirstName($_POST["firstName"]);
