@@ -1,6 +1,6 @@
 <?php
 session_start();
-$headerLinks = array("signin", "new", "edit", "signout");
+$headerLinks = array("signin", "signout");
 if ($_SESSION['login'] == "1") {
     $headerLinks['signout'] = true;
     $headerLinks['signin'] = false;
@@ -8,7 +8,7 @@ if ($_SESSION['login'] == "1") {
     $headerLinks['signout'] = false;
     $headerLinks['signin'] = true;
 }
-if ($_REQUEST['c'] == null && $_REQUEST['v'] == null && $_REQUEST['p'] == null) {
+if ($_REQUEST['c'] == null && $_REQUEST['v'] == null) {
     header('Location: http://localhost/hw3/index.php?c=default&v=default');
 }
 ?>
@@ -36,8 +36,9 @@ if ($_REQUEST['c'] == null && $_REQUEST['v'] == null && $_REQUEST['p'] == null) 
                                     $signup = "index.php?c=signup&v=signup";
                                     echo "<pre><a href = $signin>Sign In</a> <a href = $signup>Sign Up</a></pre>";
                                 } else {
-                                    $signout = "index.php?c=signin&&v=signout";
-                                    echo "<pre><a href = $signout>SignOut</a></pre>";
+                                    $signout = "index.php?c=signin&v=signout";
+                                    $mystat = "index.php?c=stats&v=stats";
+                                    echo "<pre><a href = $signout>SignOut</a> <a href = $mystat>My Stats</a></pre>";
                                 }
                                 ?>
                             </div>
