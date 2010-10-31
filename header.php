@@ -1,5 +1,7 @@
 <?php
 session_start();
+$configVars = parse_ini_file('config/config.ini', TRUE);
+$baseurl = $configVars['Database']['baseurl'];
 $headerLinks = array("signin", "signout");
 if ($_SESSION['login'] == "1") {
     $headerLinks['signout'] = true;
@@ -9,7 +11,7 @@ if ($_SESSION['login'] == "1") {
     $headerLinks['signin'] = true;
 }
 if ($_REQUEST['c'] == null && $_REQUEST['v'] == null) {
-    header('Location: http://localhost/hw3/index.php?c=default&v=default');
+    header('Location: '.$baseurl.'/index.php?c=default&v=default');
 }
 ?>
 <html>
