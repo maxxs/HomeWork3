@@ -109,7 +109,7 @@ class User {
     public function addUserToDB() {
 
         if ($this->checkUserName()) {
-            return false;
+            return -1;
         }
         else {
 
@@ -123,13 +123,10 @@ class User {
             $result = mysql_query($query);
 
             $ID = mysql_insert_id();
-            $_SESSION['UserID'] = $ID;
-            $_SESSION['login'] = '1';
-            header('Location: '.$baseurl.'/index.php?c=default&v=signin_success');
 
             mysql_close($db);
             
-            return true;
+            return $ID;
         }
 
     }
