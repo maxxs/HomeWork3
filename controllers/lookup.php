@@ -1,4 +1,5 @@
 <?php
+session_start();
 $url = $_POST['url'];
 $vanityName = $_POST['vanityName'];
 $user = $_SESSION['UserID'];
