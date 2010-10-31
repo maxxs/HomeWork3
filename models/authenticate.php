@@ -2,7 +2,7 @@
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL | E_STRICT);
-
+/*
 function authenticate($username, $password) {
     $configVars = parse_ini_file('../config/config.ini', TRUE);
     //accessing config variable
@@ -19,4 +19,6 @@ function authenticate($username, $password) {
     mysql_close($db);
     return false;
 }
+ * */
+ 
 ?>
