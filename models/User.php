@@ -1,5 +1,4 @@
 <?php
-
 class User {
     //put your code here
     var $userID;
@@ -109,7 +108,7 @@ class User {
     public function addUserToDB() {
 
         if ($this->checkUserName()) {
-            return -1;
+            return 0;
         }
         else {
 

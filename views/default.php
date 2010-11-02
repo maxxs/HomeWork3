@@ -8,11 +8,11 @@
     </p>
     <br>
     <div class="centered">
-        <form name = "urlshortner" method ="post" action = "controllers/lookup.php">
+        <form name = "urlshortner" method ="post" action = "controllers/urlController.php">
             <table>
                 <tr>
-                    <td>
-                        url:
+                    <td align ="right">
+                        URL:
                     </td>
                     <td >
                         <input type="text" name="url" value="" size="20" />
@@ -35,4 +35,3 @@
         </form>
     </div>
 </div>
-
