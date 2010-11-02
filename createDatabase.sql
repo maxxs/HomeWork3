@@ -28,9 +28,11 @@ CREATE TABLE `users` (
   `UserID` int(11) NOT NULL AUTO_INCREMENT,
   `UserName` varchar(50) NOT NULL,
   `Password` varchar(50) NOT NULL,
+  `FirstName` varchar(255) NOT NULL,
+  `LastName` varchar(255) NOT NULL,
   PRIMARY KEY (`UserID`),
   UNIQUE KEY `UserName_UNIQUE` (`UserName`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +41,6 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'straber','sean'),(2,'sshah','shivang'),(3,'mshpungin','max');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -77,4 +78,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-10-23 15:04:20
+-- Dump completed on 2010-11-01 20:45:29
